@@ -1,81 +1,83 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title='An agency website FIGMA to HTML/CSS conversion.'>
+  <section id='heroSection' class='bg-[#DCEAF5] relative min-h-[40vh]'>
+    <div class='flex wrapper py-36 justify-between'>
+      <div class='flex flex-col gap-6'>
+        <h1 class='text-6xl leading-tight text-[#1D3444] font-semibold'>
+          Prosper with our <br /> bespoke solutions
+        </h1>
+        <p class='font-medium text-lg text-[#5B5B5B]'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Suspendisse
+          varius enim in eros elementum tristique
+        </p>
+
+        <div class='flex items-center gap-6'>
+          <div class='bg-[#F58A07] px-8 py-6 rounded-full text-white'>
+            <a href='#'>See Our Services</a>
+          </div>
+          <div
+            class='px-8 py-6 rounded-full hover:bg-[#f8f8f8] duration-150 ease-out'
+          >
+            <a href='#'>See All Services</a>
+          </div>
+        </div>
+        <span class='text-[#394149]/50 pt-12'>Worked with 100+ Companies</span>
+        <div class='flex gap-6'>
+          <img src='company1.svg' alt='' />
+          <img src='company2.svg' alt='' />
+          <img src='company3.svg' alt='' />
+        </div>
+      </div>
+
+      <div>
+        <img
+          class='absolute bottom-0 right-0 lg:mr-20'
+          src='/heroImage.png'
+          alt=''
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class='wrapper py-36 w-full' id='secondSection'>
+    <div class='flex flex-col gap-8'>
+      <h2 class='text-5xl leading-tight font-semibold'>
+        We help more than 1500 <br /> companies from all sectors
+      </h2>
+      <p class='max-w-3xl'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit
+        amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo
+        suscipit tellus et pellentesque.
+      </p>
+      <div class='grid mt-12 grid-cols-3 grid-rows-1 gap-12'>
+        <Card
+          title='Business strategy'
+          src='/heroGrid1.jpg'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
+        />
+		<Card
+          title='Digitalization'
+          src='/heroGrid2.jpg'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
+        />
+		<Card
+          title='Risk assessment'
+          src='/heroGrid3.jpg'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
+        />
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
 </style>
