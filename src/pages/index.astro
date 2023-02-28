@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import CardTwo from "../components/CardTwo.astro";
 ---
 
 <Layout title='An agency website FIGMA to HTML/CSS conversion.'>
@@ -48,7 +49,7 @@ import Card from "../components/Card.astro";
       <h2 class='text-5xl leading-tight font-semibold'>
         We help more than 1500 <br /> companies from all sectors
       </h2>
-      <p class='max-w-3xl'>
+      <p class='max-w-3xl font-medium'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit
         amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo
         suscipit tellus et pellentesque.
@@ -59,16 +60,206 @@ import Card from "../components/Card.astro";
           src='/heroGrid1.jpg'
           body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
         />
-		<Card
+        <Card
           title='Digitalization'
           src='/heroGrid2.jpg'
           body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
         />
-		<Card
+        <Card
           title='Risk assessment'
           src='/heroGrid3.jpg'
           body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, '
         />
+      </div>
+    </div>
+  </section>
+  <section class='py-36 w-full bg-[#EDF7FF]' id='thirdSection'>
+    <div class='wrapper flex flex-col gap-16'>
+      <div class='flex gap-8'>
+        <h2 class='text-4xl leading-tight text-[#0D1317] font-semibold'>
+          We are building software solution that solves your business challenges
+        </h2>
+        <p class='text=[#1D3444] font-medium'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit
+          amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo
+          suscipit tellus et pellentesque.
+        </p>
+      </div>
+      <div class='grid gap-10 grid-cols-3 grid-rows-1'>
+        <CardTwo
+          src='/layerIconOrange.svg'
+          title='Invoicing'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+        />
+        <CardTwo
+          src='/magicIconOrange.svg'
+          title='Support'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+        />
+        <CardTwo
+          src='/heartIconOrange.svg'
+          title='Surveying'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class='py-36 w-full bg-white' id='fourthSection'>
+    <div class='flex w-full wrapper'>
+      <div class='my-auto w-6/12 mr-10'>
+        <div class='flex gap-6 flex-col'>
+          <h2 class='text-5xl font-semibold text-[#0D1317]'>
+            The energy of a start-up combined with 30 years of experience.
+          </h2>
+          <p class='text-[#5B5B5B]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+            commodo suscipit tellus et pellentesque.
+          </p>
+
+          <div class='flex pt-6 gap-4'>
+            <div class='flex flex-col gap-4'>
+              <span class='text-3xl font-bold text-[#F58A07]'>15+</span>
+              <h5 class='text-2xl font-semibold text-[#0D1317]'>
+                Awards received
+              </h5>
+              <p class='text-[#5B5B5B] font-medium'>
+                Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit
+                amet eros elit et.
+              </p>
+            </div>
+            <div class='flex flex-col gap-6'>
+              <span class='text-3xl font-bold text-[#F58A07]'>500+</span>
+              <h5 class='text-2xl font-semibold text-[#0D1317]'>
+                Clients Served
+              </h5>
+              <p class='text-[#5B5B5B] font-medium'>
+                Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit
+                amet eros elit et.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='relative'>
+        <img src='heroImageLadyFirst.jpg' class='w-full rounded-3xl' alt='' />
+        <img class='absolute -top-10 -right-10' src='Circle.svg' alt='' />
+      </div>
+    </div>
+  </section>
+  <section
+    class='w-full mb-20 wrapper bg-[#EDF7FF] rounded-2xl'
+    id='fifthSection'
+  >
+    <div class='p-10 relative'>
+      <img src='Ribbon.svg' class='absolute -top-4 -right-4' alt='' />
+      <div class='flex gap-5'>
+        <a class='cursor-pointer' href='#'
+          ><button
+            class='bg-white py-2 px-6 rounded-full font-semibold text-[#F58A07]'
+            >Buisness Strategy</button
+          ></a
+        >
+        <a class='cursor-pointer' href='#'
+          ><button
+            class='bg-transparent border border-[#A8BCCC] py-2 px-6 rounded-full font-semibold text-[#063255]/30'
+            >Digitalization</button
+          ></a
+        >
+        <a class='cursor-pointer' href='#'
+          ><button
+            class='bg-transparent border border-[#A8BCCC] py-2 px-6 rounded-full font-semibold text-[#063255]/30'
+            >Risk Assesment</button
+          ></a
+        >
+      </div>
+      <div class='flex w-full items-center pt-16'>
+        <div class='flex w-5/12 flex-col gap-8'>
+          <h2 class='text-5xl leading-tight font-semibold'>
+            Helping clients with research and strategy for their business
+          </h2>
+          <p class='text-[#5B5B5B] font-medium'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
+            commodo suscipit tellus et pellentesque.
+            <br />
+            <br />
+            Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit
+            amet eros blan esque.
+          </p>
+          <div class='flex gap-3'>
+            <p class='text-[#F58A07] font-medium leading-snug'>
+              See all services
+            </p>
+            <img src='/orangeArrow.svg' alt='' />
+          </div>
+        </div>
+        <div class='w-7/12 ml-6 relative'>
+          <img class='w-full float-right' src='fifthSectionImage.jpg' alt='' />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='flex w-full'>
+      <div class='w-6/12 bg-[#F58A07]'>
+        <img class='object-cover h-full' src='jobVacancies.jpg' alt='' />
+      </div>
+      <div class='w-6/12 flex items-center p-16 bg-[#F58A07]'>
+        <div class='w-full flex gap-8 flex-col'>
+          <h3
+            class='font-semibold max-w-fit tracking-tighter leading-snug text-5xl text-white'
+          >
+            Energy of a start-up combined with 30 years of experience.
+          </h3>
+          <a class='' href=''
+            ><button
+              class='bg-white px-6 py-3 rounded-full font-semibold text-[#F58A07]'
+              >See Job Vacancies</button
+            ></a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='w-full my-36 wrapper' id='sixthSection'>
+    <div class='flex items-center w-full'>
+      <div class='w-6/12 flex p-6 flex-col mr-6 gap-8'>
+        <h2 class='text-5xl font-semibold leading-tight'>
+          Finsweet was a <br /> dream to work with
+        </h2>
+        <p>
+          Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel.
+          Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus
+          eleifend nec felis vel auctor.
+        </p>
+        <div class='flex gap-4 items-center'>
+          <div><img src='avatar.jpg' alt='' /></div>
+          <div class='flex flex-col'>
+            <div class='text-xl font-medium'>Chikelu Neo</div>
+            <div class='text-base font-medium text-[#F58A07]'>
+              CEO at MazeAI
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='w-6/12 relative'>
+        <div class=''>
+          <img
+            src='testimonialVideoThumb.jpg'
+            class='float-right w-full relative'
+            alt=''
+          />
+          <div
+            class='absolute flex gap-4 items-center text-white bottom-8 left-8'
+          >
+            <div class="w-10 flex items-center justify-center h-10 rounded-full bg-white">
+              <img src='playIcon.svg' alt='' />
+            </div>
+            <span>Play Video</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
