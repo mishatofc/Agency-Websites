@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import CardTwo from "../components/CardTwo.astro";
+import CardThree from "../components/CardThree.astro";
 ---
 
 <Layout title='An agency website FIGMA to HTML/CSS conversion.'>
@@ -262,6 +263,22 @@ import CardTwo from "../components/CardTwo.astro";
         </div>
       </div>
     </div>
+  </section>
+  <section id="seventhSection" class="bg-[#DCEAF5] py-36">
+    <div class="wrapper flex flex-col gap-8">
+      <h2 class="text-4xl font-semibold leading-tight">Latest Blog & News</h2>
+      <div class="grid gap-10 grid-rows-1 grid-cols-3">
+        <CardThree title="Why you have to digitalize in 2021" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid1.jpg" />
+        <CardThree title="Our internal process and longerm vision" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid2.jpg" />
+        <CardThree title="Helping the next generation of leaders" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid3.jpg" />
+
+      </div>
+
+
+
+    </div>
+
+
   </section>
 </Layout>
 
