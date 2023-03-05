@@ -7,37 +7,37 @@ import CardThree from "../components/CardThree.astro";
 
 <Layout title='An agency website FIGMA to HTML/CSS conversion.'>
   <section id='heroSection' class='bg-[#DCEAF5] relative min-h-[40vh]'>
-    <div class='flex wrapper py-36 justify-between'>
-      <div class='flex flex-col gap-6'>
-        <h1 class='text-6xl leading-tight text-[#1D3444] font-semibold'>
+    <div class='flex w-full flex-col lg:flex-row gap-80 sm:gap-96 lg:gap-0 wrapper justify-between'>
+      <div class='flex w-full lg:w-6/12 py-36 z-10 flex-col gap-12 xl:gap-6'>
+        <h1 class='text-5xl md:text-5xl xl:text-6xl 2xl:text-6xl leading-tight md:leading-snug text-[#1D3444] font-semibold'>
           Prosper with our <br /> bespoke solutions
         </h1>
-        <p class='font-medium text-lg text-[#5B5B5B]'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Suspendisse
+        <p class='font-medium text-base md:text-lg text-[#5B5B5B]'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse
           varius enim in eros elementum tristique
         </p>
 
-        <div class='flex items-center gap-6'>
-          <div class='bg-[#F58A07] px-8 py-6 rounded-full text-white'>
+        <div class='flex order-last sm:order-none flex-col sm:flex-row gap-8'>
+          <div class='bg-[#F58A07] w-full text-center sm:max-w-max px-8 py-6 rounded-full text-white'>
             <a href='#'>See Our Services</a>
           </div>
           <div
-            class='px-8 py-6 rounded-full hover:bg-[#f8f8f8] duration-150 ease-out'
+            class='px-8 py-6 w-full text-center sm:max-w-max rounded-full bg-[#f8f8f8] duration-150 ease-out'
           >
             <a href='#'>See All Services</a>
           </div>
         </div>
-        <span class='text-[#394149]/50 pt-12'>Worked with 100+ Companies</span>
-        <div class='flex gap-6'>
-          <img src='company1.svg' alt='' />
-          <img src='company2.svg' alt='' />
-          <img src='company3.svg' alt='' />
+        <span class='text-[#394149]/50 lg:pt-12'>Worked with 100+ Companies</span>
+        <div class='flex flex-wrap gap-6'>
+          <img class="h-6" src='company1.svg' alt='' />
+          <img class="h-6" src='company2.svg' alt='' />
+          <img class="h-6" src='company3.svg' alt='' />
         </div>
       </div>
 
-      <div>
+      <div class="w-full lg:w-6/12 relative">
         <img
-          class='absolute bottom-0 right-0 lg:mr-20'
+          class='absolute bottom-0 right-0 lg:right-0 xl:-right-12'
           src='/heroImage.png'
           alt=''
         />
@@ -55,7 +55,7 @@ import CardThree from "../components/CardThree.astro";
         amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo
         suscipit tellus et pellentesque.
       </p>
-      <div class='grid mt-12 grid-cols-3 grid-rows-1 gap-12'>
+      <div class='grid mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-12'>
         <Card
           title='Business strategy'
           src='/heroGrid1.jpg'
@@ -76,7 +76,7 @@ import CardThree from "../components/CardThree.astro";
   </section>
   <section class='py-36 w-full bg-[#EDF7FF]' id='thirdSection'>
     <div class='wrapper flex flex-col gap-16'>
-      <div class='flex gap-8'>
+      <div class='flex flex-col md:flex-row gap-8'>
         <h2 class='text-4xl leading-tight text-[#0D1317] font-semibold'>
           We are building software solution that solves your business challenges
         </h2>
@@ -86,7 +86,7 @@ import CardThree from "../components/CardThree.astro";
           suscipit tellus et pellentesque.
         </p>
       </div>
-      <div class='grid gap-10 grid-cols-3 grid-rows-1'>
+      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-12'>
         <CardTwo
           src='/layerIconOrange.svg'
           title='Invoicing'
@@ -107,10 +107,10 @@ import CardThree from "../components/CardThree.astro";
   </section>
 
   <section class='py-36 w-full bg-white' id='fourthSection'>
-    <div class='flex w-full wrapper'>
-      <div class='my-auto w-6/12 mr-10'>
+    <div class='flex flex-col gap-20 lg:flex-row w-full wrapper'>
+      <div class='my-auto w-full lg:w-6/12 mr-10'>
         <div class='flex gap-6 flex-col'>
-          <h2 class='text-5xl font-semibold text-[#0D1317]'>
+          <h2 class='text-4xl lg:text-5xl font-semibold text-[#0D1317]'>
             The energy of a start-up combined with 30 years of experience.
           </h2>
           <p class='text-[#5B5B5B]'>
@@ -119,7 +119,7 @@ import CardThree from "../components/CardThree.astro";
             commodo suscipit tellus et pellentesque.
           </p>
 
-          <div class='flex pt-6 gap-4'>
+          <div class='flex flex-col sm:flex-row pt-6 gap-16 sm:gap-4'>
             <div class='flex flex-col gap-4'>
               <span class='text-3xl font-bold text-[#F58A07]'>15+</span>
               <h5 class='text-2xl font-semibold text-[#0D1317]'>
@@ -143,7 +143,7 @@ import CardThree from "../components/CardThree.astro";
           </div>
         </div>
       </div>
-      <div class='relative'>
+      <div class='relative mr-16 lg:mr-0'>
         <img src='heroImageLadyFirst.jpg' class='w-full rounded-3xl' alt='' />
         <img class='absolute -top-10 -right-10' src='Circle.svg' alt='' />
       </div>
@@ -153,9 +153,9 @@ import CardThree from "../components/CardThree.astro";
     class='w-full mb-20 wrapper bg-[#EDF7FF] rounded-2xl'
     id='fifthSection'
   >
-    <div class='p-10 relative'>
-      <img src='Ribbon.svg' class='absolute -top-4 -right-4' alt='' />
-      <div class='flex gap-5'>
+    <div class='px-0 py-10 lg:p-10 relative'>
+      <img src='Ribbon.svg' class='absolute hidden -top-4 -right-4' alt='' />
+      <div class='flex flex-wrap gap-5'>
         <a class='cursor-pointer' href='#'
           ><button
             class='bg-white py-2 px-6 rounded-full font-semibold text-[#F58A07]'
@@ -175,9 +175,9 @@ import CardThree from "../components/CardThree.astro";
           ></a
         >
       </div>
-      <div class='flex w-full items-center pt-16'>
-        <div class='flex w-5/12 flex-col gap-8'>
-          <h2 class='text-5xl leading-tight font-semibold'>
+      <div class='flex flex-col lg:flex-row w-full items-center pt-16'>
+        <div class='flex w-full lg:w-5/12 flex-col gap-8'>
+          <h2 class='text-4xl lg:text-5xl leading-tight font-semibold'>
             Helping clients with research and strategy for their business
           </h2>
           <p class='text-[#5B5B5B] font-medium'>
@@ -196,21 +196,21 @@ import CardThree from "../components/CardThree.astro";
             <img src='/orangeArrow.svg' alt='' />
           </div>
         </div>
-        <div class='w-7/12 ml-6 relative'>
+        <div class='w-full lg:w-7/12 mt-16 lg:ml-6 relative'>
           <img class='w-full float-right' src='fifthSectionImage.jpg' alt='' />
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class='flex w-full'>
-      <div class='w-6/12 bg-[#F58A07]'>
-        <img class='object-cover h-full' src='jobVacancies.jpg' alt='' />
+    <div class='flex flex-col lg:flex-row w-full'>
+      <div class='w-full lg:w-6/12 bg-[#F58A07]'>
+        <img class='object-cover w-full h-full' src='jobVacancies.jpg' alt='' />
       </div>
-      <div class='w-6/12 flex items-center p-16 bg-[#F58A07]'>
+      <div class='w-full lg:w-6/12 flex items-center py-16 p-10 lg:p-16 bg-[#F58A07]'>
         <div class='w-full flex gap-8 flex-col'>
           <h3
-            class='font-semibold max-w-fit tracking-tighter leading-snug text-5xl text-white'
+            class='font-semibold max-w-fit tracking-tighter leading-snug text-4xl lg:text-5xl text-white'
           >
             Energy of a start-up combined with 30 years of experience.
           </h3>
@@ -225,9 +225,9 @@ import CardThree from "../components/CardThree.astro";
     </div>
   </section>
   <section class='w-full my-36 wrapper' id='sixthSection'>
-    <div class='flex items-center w-full'>
-      <div class='w-6/12 flex p-6 flex-col mr-6 gap-8'>
-        <h2 class='text-5xl font-semibold leading-tight'>
+    <div class='flex flex-col lg:flex-row items-center w-full'>
+      <div class='lg:w-6/12 flex lg:p-6 flex-col mr-6 gap-10 lg:gap-8'>
+        <h2 class='text-4xl lg:text-5xl font-semibold leading-tight'>
           Finsweet was a <br /> dream to work with
         </h2>
         <p>
@@ -245,8 +245,8 @@ import CardThree from "../components/CardThree.astro";
           </div>
         </div>
       </div>
-      <div class='w-6/12 relative'>
-        <div class=''>
+      <div class='lg:w-6/12 mt-10 lg:mt-0 w-full relative'>
+        <div class='w-full'>
           <img
             src='testimonialVideoThumb.jpg'
             class='float-right w-full relative'
@@ -255,7 +255,9 @@ import CardThree from "../components/CardThree.astro";
           <div
             class='absolute flex gap-4 items-center text-white bottom-8 left-8'
           >
-            <div class="w-10 flex items-center justify-center h-10 rounded-full bg-white">
+            <div
+              class='w-10 flex items-center justify-center h-10 rounded-full bg-white'
+            >
               <img src='playIcon.svg' alt='' />
             </div>
             <span>Play Video</span>
@@ -264,21 +266,27 @@ import CardThree from "../components/CardThree.astro";
       </div>
     </div>
   </section>
-  <section id="seventhSection" class="bg-[#DCEAF5] py-36">
-    <div class="wrapper flex flex-col gap-8">
-      <h2 class="text-4xl font-semibold leading-tight">Latest Blog & News</h2>
-      <div class="grid gap-10 grid-rows-1 grid-cols-3">
-        <CardThree title="Why you have to digitalize in 2021" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid1.jpg" />
-        <CardThree title="Our internal process and longerm vision" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid2.jpg" />
-        <CardThree title="Helping the next generation of leaders" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et." src="heroGrid3.jpg" />
-
+  <section id='seventhSection' class='bg-[#DCEAF5] py-36'>
+    <div class='wrapper flex flex-col gap-8'>
+      <h2 class='text-4xl font-semibold leading-tight'>Latest Blog & News</h2>
+      <div class='grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-12'>
+        <CardThree
+          title='Why you have to digitalize in 2021'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+          src='heroGrid1.jpg'
+        />
+        <CardThree
+          title='Our internal process and longerm vision'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+          src='heroGrid2.jpg'
+        />
+        <CardThree
+          title='Helping the next generation of leaders'
+          body='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.'
+          src='heroGrid3.jpg'
+        />
       </div>
-
-
-
     </div>
-
-
   </section>
 </Layout>
 
